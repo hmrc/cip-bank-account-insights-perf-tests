@@ -23,8 +23,8 @@ import uk.gov.hmrc.performance.conf.ServicesConfiguration
 
 object InsightsRequests extends ServicesConfiguration {
 
-  val baseUrl: String = baseUrlFor("cip-bank-account-insights")
-  val route: String   = "/bank-account"
+  val baseUrl: String = baseUrlFor("bank-account-insights")
+  val route: String   = "/bank-account-insights"
 
   val checkWatchList: HttpRequestBuilder =
     http("Check if account is on watch list")
